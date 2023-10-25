@@ -9,7 +9,13 @@ function CommentButton({ post, user, commentsAmount, nickname, postId }) {
 
   return (
     <div className="flex items-center gap-2 mt-1">
-      <img role="presentation" className="w-[23px]" onClick={showComment} alt="comment" src={commentIcon} />
+      <img
+        role="presentation"
+        className="w-[23px] h-[23px] object-cover"
+        onClick={showComment}
+        alt="comment"
+        src={commentIcon}
+      />
       <p>{commentsAmount}</p>
     </div>
   )
